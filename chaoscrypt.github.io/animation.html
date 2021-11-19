@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./animecss.css">
+    <title>Document</title>
+</head>
+<body>
+    <div >
+<div class="square">
+    <p></p>
+</div>
+    </div>
+    <div>
+        <div class="text">
+            <p>“According to all known laws of aviation, there is no way that a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyways. Because bees don't care what humans think is impossible.”</p>
+        </div>
+    </div>
+    
+    <script src="anime.min.js"> </script>
+    <script>
+        anime({
+            targets:".square" ,
+            keyframes: [
+                {translateX:500, translateY:250},
+                {translateY:500, translateX:250},
+                {translateY:0, translateX:0}
+                
+            ],
+            duration: 3000,
+            loop: true
+        });
+        anime({
+            targets:".text" ,
+            keyframes: [
+                {translateX:500, translateY:300},
+                {translateY:400, translateX:150},
+                {translateY:0, translateX:0}
+                
+            ],
+            duration: 30000,
+            loop: true
+        });
+
+
+    </script>
+</body>
+</html>
